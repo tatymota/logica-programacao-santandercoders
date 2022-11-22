@@ -7,7 +7,7 @@ public class VotoTernario {
         String idadeEleitor = scanner.nextLine();
 
         try{
-            int idade = Integer.parseInt(idadeEleitor);
+            int idade = Integer.parseInt(idadeEleitor); //converter para int
 
             String voto = (idade >= 18 && idade <= 70)? "Voto Obrigatório" :
                     (idade >= 16 &&  idade < 18) || (idade > 70)? "Voto facultativo" :
